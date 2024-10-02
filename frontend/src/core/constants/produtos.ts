@@ -28,7 +28,29 @@ const produtos: Produto[] = [
       // deve se colocar "destaques" e quantas
       // informaçoes quiser depois
     }
-  }
+  },
+  {
+    id: 2,
+    nome: 'Notebook Acer Nitro 5',
+    descricao: 'sou apenas um mero notebook',
+    marca: 'Acer',
+    modelo: 'AN515-54-58CL',
+    imagem: '',
+    nota: 4.5,
+    videoReview: '',
+    tags: ['Baixou', 'Outras Tags'],
+    precoBase: 1299.99,
+    precoPromocional: 999.99,
+    precoMenor: 799.99,
+    precoMaior: 1599.99,
+    precoMedio: 999.99,
+    especificacoes: {
+      destaques: 'NVIDIA GeForce',
+      Processador: 'Intel Core i5',
+      Tela: '15.6 polegadas Full HD',
+      Peso: '2.5 Kg'
+    }
+  },
 ]
 
 export default produtos
