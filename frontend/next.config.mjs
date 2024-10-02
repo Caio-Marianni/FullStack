@@ -4,8 +4,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'firebasestorege.googleleapis.com'
-        // hostname: '**'
+        // hostname: 'firebasestorege.googleleapis.com'
+        hostname: '**'
         // assim libera o caminho para acessar qualquer img
       }
     ]
