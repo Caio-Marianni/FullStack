@@ -26,7 +26,7 @@ export default function BannerCompra(props: BannerCompraProps) {
                 </div>
             </div>
             <div className="flex-1 flex flex-col text-2xl font-semibold text-zinc-400 pl-5">
-                <span className="text-base text-zinc-300">{parcelamento.qtdeParcelas}x de</span>
+                <span className="text-base text-zinc-300">{parcelamento.qtdParcelas}x de</span>
                 {Moeda.formatar(parcelamento.valorParcela)}{' '}
             </div>
             <div className="flex gap-2 items-center">

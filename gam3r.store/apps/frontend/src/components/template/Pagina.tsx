@@ -2,7 +2,7 @@ import Cabecalho from './Cabecalho'
 import Rodape from './Rodape'
 
 export interface PaginaProps {
-    children: any
+    children: string | number | boolean | []
     className?: string
     semCabecalho?: boolean
     semRodape?: boolean

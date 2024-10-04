@@ -4,8 +4,15 @@ import ProdutoNaoEncontrado from '@/components/produto/ProdutoNaoEncontrado'
 import TituloProduto from '@/components/produto/TituloProduto'
 import { produtos } from '@gstore/core'
 
-export default function PaginaProduto(props: any) {
-    const id = +props.params.id
+// Definição do tipo para `props`
+type PaginaProdutoProps = {
+    params: {
+      id: string; // Tipo da propriedade `id` dentro de `params`
+    };
+  };
+
+export default function PaginaProduto({ params }: PaginaProdutoProps) {
+    const id = +params.id
     const produto = produtos.find((produto) => produto.id === id)
 
     return produto ? (
